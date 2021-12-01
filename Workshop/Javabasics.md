@@ -306,3 +306,101 @@ The default keyword is optional and specifies a code to be executed if there is 
 
     // Outputs "Looking forward to the Weekend."
 ```
+
+
+## Loops
+
+Loops can execute a block of code until a certain condition is met. Loops are convenient because they save time, reduce errors, and make code more readable.
+
+**Java while Loop**
+
+The while loop runs through a block of code as long as a certain condition is met:
+
+***Syntax***
+
+```
+    while (condition)
+    {
+        // code block to be executed
+    }
+```
+
+
+***Example***
+
+In the following example, the code in the loop is executed again and again as long as a variable (i) is less than 5:
+```
+    int i = 0; while (i < 5)
+    {
+        System.out.println(i); 
+        i++;
+    }
+```
+
+**Java for loop**
+
+***Syntax***
+
+```
+    for (statement 1; statement 2; statement 3)
+    {
+        // code block to be executed
+    }
+```
+
+- Statement 1 is executed (once) before the code block is executed.
+- Statement 2 defines the condition for the execution of the code block.
+- Statement 3 is executed (each time) after the code block has been executed.
+
+***Example***
+
+The following example outputs the numbers 0 to 4:
+
+```
+    for (int i = 0; i < 5; i++)
+    {
+        System.out.println(i);
+    }
+```
+
+
+
+**Java foreach Loop**
+
+***Syntax***
+
+```
+    foreach (type variableName : arrayName)
+    {
+        // code block to be executed
+    }
+```
+
+***Example***
+```
+    String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+    foreach (String i in cars)
+    {
+        System.out.println(i);
+    }
+```
+
+
+## Operators
+
+Operators are used to perform operations on variables and values. In the following example, we use the + operator to add two values:
+
+```
+    int sum1 = 100 + 50; // 150 (100 + 50) 
+    int sum2 = sum1 + 250; // 400 (150 + 250) 
+    int sum3 = sum2 + sum2; // 800 (400 + 400)
+```
+
+| Operator | Name | Description | Example |
+| + | Addition | Adds two values together | x + y |
+| - | Subtraction | Subtracts one valuefrom another | x - y |
+| * | Multiplication | Multiplies two values | x * y |
+| / | Division | Divides one value from another | x / y |
+| % | Modulus | Returns the remainder of the Division | x % y |
+| ++ | Increment | Increases the value of a variable by 1 | x++ |
+| -- | decrement | Decreases the value of a variable by 1 | x-- |
