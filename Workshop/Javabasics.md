@@ -397,6 +397,7 @@ Operators are used to perform operations on variables and values. In the followi
 ```
 
 | Operator | Name | Description | Example |
+| ----------- | ----------- | ----------- | ----------- |
 | + | Addition | Adds two values together | x + y |
 | - | Subtraction | Subtracts one valuefrom another | x - y |
 | * | Multiplication | Multiplies two values | x * y |
