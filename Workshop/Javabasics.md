@@ -405,3 +405,7 @@ Operators are used to perform operations on variables and values. In the followi
 | % | Modulus | Returns the remainder of the Division | x % y |
 | ++ | Increment | Increases the value of a variable by 1 | x++ |
 | -- | decrement | Decreases the value of a variable by 1 | x-- |
+| = | equals | assigns a value to a variable | x = 5 |
+| += | Addition assignment | The addition assignment operator ( += ) adds the value of the right operand to a variable and assigns the result to the variable. | x += 5 |
+| -= | Subtraction assignment | The subtraction assignment operator (-=) subtracts the value of the right operand from a variable and assigns the result to the variable. | x -= 5 |
+| `*`= | Multiplication assignment | The multiplication assignment operator (`*`=) multiplies a variable by the value of the right operand and assigns the result to the variable. | x `*`= 5 |
