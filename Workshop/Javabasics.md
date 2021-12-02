@@ -29,13 +29,13 @@ In Java there are different types of variables (defined with different keywords)
 
 ***Syntax***
 
-` type variableName = value; `
+`type variableName = value;`
 
 ***Examples***
 
-` int myNum = 15; `
+`int myNum = 15; `
 
-` String word = "You can write anything here" `
+`String word = "You can write anything here"`
 
 
 
@@ -45,11 +45,9 @@ However, you can add the const keyword if you don't want others (or yourself) to
 (this declares the variable as "constant", which means it is immutable and read-only):
 
 ```
+const int myNum = 15;
 
-    const int myNum = 15;
-    
-    myNum = 20; // throws error
-
+myNum = 20; // throws error
 ```
 
 
@@ -66,65 +64,61 @@ the keyword "static" means that the function is the same in all instances, e.g. 
 ***Syntax***
 
 ```
-
-    class Program{
-        AccessModifier type name() {
-        // code to be executed
-        }
+class Program{
+    AccessModifier type name() {
+    // code to be executed
     }
-
+}
 ```
 
 
 ***Examples***
 
 ```
-   
-    public void MyMethod() {
-        System.out.println("this is a void so there will not be a return");
-    }
-
+public void MyMethod() {
+    System.out.println("this is a void so there will not be a return");
+}
 ```
 
 
 ```
-    int MyMethod() { 
-        int i = 5
-        System.out.println("this is an int method so if there is no return you will get an error");
-        return i;
-    }
-```
-
-This method can be used as follows:
-
-```
-    void main() {
-        int x = 0; //integer x is declared with a value of 0
-        x = MyMethod(); //var x wants to be equal to the return value of MyMethod()
-        System.out.println(x); // the compiler will now output the new value of x which is now 5
-    }   
-```
-
-
-
-
-
-```
-    boolean myMethod(){
-        boolean i = true;
-        System.out.println("this is a boolean method so if there is no return java will throw an error");
-        return i;
-    }
+int MyMethod() { 
+    int i = 5
+    System.out.println("this is an int method so if there is no return you will get an error");
+    return i;
+}
 ```
 
 This method can be used as follows:
 
 ```
-    void main() {
-        boolean x = false; //boolean x is declared with a value of false
-        x = MyMethod(); //var x wants to be equal to the return value of MyMethod()
-        System.out.println(x); // the compiler will now output the new value of x which is now true
-    }   
+void main() {
+    int x = 0; //integer x is declared with a value of 0
+    x = MyMethod(); //var x wants to be equal to the return value of MyMethod()
+    System.out.println(x); // the compiler will now output the new value of x which is now 5
+}   
+```
+
+
+
+
+
+```
+boolean myMethod(){
+    boolean i = true;
+    System.out.println("this is a boolean method so if there is no return java will throw an error");
+    return i;
+}
+```
+
+This method can be used as follows:
+
+```
+void main() {
+    boolean x = false; //boolean x is declared with a value of false
+    x = MyMethod(); //var x wants to be equal to the return value of MyMethod()
+    System.out.println(x); // the compiler will now output the new value of x which is now true
+}   
 ```
 
 
@@ -149,15 +143,15 @@ Use else if to specify a new condition that will be tested if the first conditio
 
 
 ```
-    if (condition1){
-        // block of code to be executed if condition1 is True
-    }
-    else if (condition2) {
-        // block of code to be executed if the condition1 is false and condition2 is True
-    }
-    else{
-        // block of code to be executed if the condition1 is false and condition2 is False
-    }
+if (condition1){
+    // block of code to be executed if condition1 is True
+}
+else if (condition2) {
+    // block of code to be executed if the condition1 is false and condition2 is True
+}
+else{
+    // block of code to be executed if the condition1 is false and condition2 is False
+}
 ```
 
 
@@ -165,18 +159,17 @@ Use else if to specify a new condition that will be tested if the first conditio
 ***Examples***
 
 ```
-    int time = 22; 
-    
-    if (time < 10) {
-        System.out.println ("Good morning.");
-    }
-        else if (time < 20) { System.out.println("Good day");
-    }
-    else {
-        System.out.println ("Good evening.");
-    }
+int time = 22; 
 
-    // Outputs "Good evening."
+if (time < 10) {
+    System.out.println ("Good morning.");
+}
+    else if (time < 20) { System.out.println("Good day");
+}
+else {
+    System.out.println ("Good evening.");
+}
+// Outputs "Good evening."
 ```
 
 
@@ -187,29 +180,27 @@ Use else if to specify a new condition that will be tested if the first conditio
 
 
 ```
-    variable = (condition) ? expressionTrue : expressionFalse;
+variable = (condition) ? expressionTrue : expressionFalse;
 ```
 
 
 Instead of writing:
 
 ```
-    int time = 20;
-
-    if (time < 18) {
-        System.out.println ("Good day.");
-    }
-
-    else {
-        System.out.println("Good evening.");
-    }
+int time = 20;
+if (time < 18) {
+    System.out.println ("Good day.");
+}
+else {
+    System.out.println("Good evening.");
+}
 ```
 
 You can simply write:
 
 ```
-    int time = 20;
-    String result = (time < 18) ? "Good day." : "Good evening."; System.out.println(result);
+int time = 20;
+String result = (time < 18) ? "Good day." : "Good evening."; System.out.println(result);
 ```
 
 
@@ -222,18 +213,18 @@ Use the switch statement to select one of several code blocks to execute.
 ***Syntax***
 
 ```
-    switch(expression)
-    {
-        case x:
-            // code block
-        break; 
-        case y:
-            // code block
-        break; 
-        default:
-            // code block
-        break;
-    }
+switch(expression)
+{
+    case x:
+        // code block
+    break; 
+    case y:
+        // code block
+    break; 
+    default:
+        // code block
+    break;
+}
 ```
 
 
@@ -250,32 +241,32 @@ Use the switch statement to select one of several code blocks to execute.
 
 
 ```
-    int day = 4;
-    switch (day)
-    {
-        case 1:
-            System.out.println("Monday");
-        break;
-        case 2:
-            System.out.println("Tuesday");
-        break;
-        case 3:
-            System.out.println("Wednesday");
-        break;
-        case 4:
-            System.out.println("Thursday");
-        break;
-        case 5:
-            System.out.println("Friday");
-        break;
-        case 6:
-            System.out.println("Saturday");
-        break;
-        case 7:
-            System.out.println("Sunday");
-        break;
-    }
-    // Outputs "Thursday" (day 4)
+int day = 4;
+switch (day)
+{
+    case 1:
+        System.out.println("Monday");
+    break;
+    case 2:
+        System.out.println("Tuesday");
+    break;
+    case 3:
+        System.out.println("Wednesday");
+    break;
+    case 4:
+        System.out.println("Thursday");
+    break;
+    case 5:
+        System.out.println("Friday");
+    break;
+    case 6:
+        System.out.println("Saturday");
+    break;
+    case 7:
+        System.out.println("Sunday");
+    break;
+}
+// Outputs "Thursday" (day 4)
 ```
 
 **The key word "break"**
@@ -290,21 +281,20 @@ When a match is found and the task is done, it is time for a break. There is no 
 The default keyword is optional and specifies a code to be executed if there is no case match:
 
 ```
-    int day = 4;
-     switch (day)
-    {
-    case 6:
-        System.out.println("Today is Saturday"); 
-    break;
-    case 7:
-        System.out.println("Today is Sunday");
-    break;
-    default:
-        System.out.println("Looking forward to the Weekend");
-    break;
-    }
-
-    // Outputs "Looking forward to the Weekend."
+int day = 4;
+ switch (day)
+{
+case 6:
+    System.out.println("Today is Saturday"); 
+break;
+case 7:
+    System.out.println("Today is Sunday");
+break;
+default:
+    System.out.println("Looking forward to the Weekend");
+break;
+}
+// Outputs "Looking forward to the Weekend."
 ```
 
 
@@ -319,10 +309,10 @@ The while loop runs through a block of code as long as a certain condition is me
 ***Syntax***
 
 ```
-    while (condition)
-    {
-        // code block to be executed
-    }
+while (condition)
+{
+    // code block to be executed
+}
 ```
 
 
@@ -330,11 +320,11 @@ The while loop runs through a block of code as long as a certain condition is me
 
 In the following example, the code in the loop is executed again and again as long as a variable (i) is less than 5:
 ```
-    int i = 0; while (i < 5)
-    {
-        System.out.println(i); 
-        i++;
-    }
+int i = 0; while (i < 5)
+{
+    System.out.println(i); 
+    i++;
+}
 ```
 
 **Java for loop**
@@ -342,10 +332,10 @@ In the following example, the code in the loop is executed again and again as lo
 ***Syntax***
 
 ```
-    for (statement 1; statement 2; statement 3)
-    {
-        // code block to be executed
-    }
+for (statement 1; statement 2; statement 3)
+{
+    // code block to be executed
+}
 ```
 
 - Statement 1 is executed (once) before the code block is executed.
@@ -357,10 +347,10 @@ In the following example, the code in the loop is executed again and again as lo
 The following example outputs the numbers 0 to 4:
 
 ```
-    for (int i = 0; i < 5; i++)
-    {
-        System.out.println(i);
-    }
+for (int i = 0; i < 5; i++)
+{
+    System.out.println(i);
+}
 ```
 
 
@@ -370,19 +360,19 @@ The following example outputs the numbers 0 to 4:
 ***Syntax***
 
 ```
-    foreach (type variableName : arrayName)
-    {
-        // code block to be executed
-    }
+foreach (type variableName : arrayName)
+{
+    // code block to be executed
+}
 ```
 
 ***Example***
 ```
-    String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
-    foreach (String i in cars)
-    {
-        System.out.println(i);
-    }
+String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+foreach (String i in cars)
+{
+    System.out.println(i);
+}
 ```
 
 
@@ -391,9 +381,9 @@ The following example outputs the numbers 0 to 4:
 Operators are used to perform operations on variables and values. In the following example, we use the + operator to add two values:
 
 ```
-    int sum1 = 100 + 50; // 150 (100 + 50) 
-    int sum2 = sum1 + 250; // 400 (150 + 250) 
-    int sum3 = sum2 + sum2; // 800 (400 + 400)
+int sum1 = 100 + 50; // 150 (100 + 50) 
+int sum2 = sum1 + 250; // 400 (150 + 250) 
+int sum3 = sum2 + sum2; // 800 (400 + 400)
 ```
 
 | Operator | Name | Description | Example |
@@ -420,3 +410,141 @@ Operators are used to perform operations on variables and values. In the followi
 | &#124; &#124; |  Logical or | Logical or Returns true if one of the statements is true | x < 5 &#124; &#124; x < 10 |
 | ! |  Logical not | Reverses the result, returns false if the result is true | !(x < 5 && x < 10) |
 
+
+## Arrays
+
+
+Arrays are used to store multiple values in a single variable instead of declaring a separate variable for each value.
+To declare an array, define the variable type with square brackets:
+
+***Syntax***
+```
+type[] name;
+type[] name = {var1, var2, var3}
+```
+
+
+***Example***
+
+```
+String[] cars;
+String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+```
+
+
+You access an array element by referring to the index number. This statement accesses the value of the first element in cars:
+```
+String[] cars = {"Volvo", "BMW", "Ford", "Mazda"}; 
+System.out.println(cars[0]);
+// Outputs Volvo
+```
+
+To change the value of a particular element, specify the index number:
+
+```
+String[] cars = {"Volvo", "BMW", "Ford", "Mazda"}; cars[0] = "Opel";
+System.out.println(cars[0]);
+// Now outputs Opel instead of Volvo
+```
+
+To find out how many elements an array has, use the length property:
+
+```
+String[] cars = {"Volvo", "BMW", "Ford", "Mazda"}; 
+System.out.println(cars.Length);
+// Outputs 4
+```
+
+
+**Loop through an array**
+
+There is also a foreach loop that is used exclusively for traversing elements in an array:
+
+***Syntax***
+
+
+```
+foreach (type variableName : arrayName) {
+    // code block to be executed
+}
+```
+
+
+***Example***
+
+```
+String[] cars = {"Volvo", "BMW", "Ford", "Mazda"}; 
+foreach (String i in cars){
+    Console.WriteLine(i);
+}
+```
+
+
+**Sort an Array**
+
+***Example***
+
+
+```
+// Sort a String
+String[] cars = {"Volvo", "BMW", "Ford", "Mazda"}; 
+Array.Sort(cars);
+foreach (String i in cars){ 
+    System.out.println(i);
+}
+
+
+int[] myNumbers = {5, 1, 8, 9}; 
+Array.Sort(myNumbers);
+foreach (int i in myNumbers)
+{
+    System.out.println(i);
+}
+```
+
+## Object-oriented programming
+
+OOP stands for Object-Oriented Programming.
+Procedural programming is about writing procedures or methods that perform operations on data, while object-oriented programming is about creating objects that contain both data and methods.
+Object-oriented programming has several advantages over procedural programming: OOP is faster and easier to execute
+OOP provides a clear structure for the programs
+OOP helps keep JAVA code DRY "Don't Repeat Yourself" and makes the code easier to maintain, modify and debug
+OOP makes it possible to create complete reusable applications with less code and shorter development time
+Tip: The "Don't Repeat Yourself" (DRY) principle is about reducing code repetition. You should take out the codes that are common to the application and place them in a single place and reuse them instead of repeating them.
+Classes and objects are the two main aspects of object-oriented programming.
+Take a look at the following figure to see the difference between classes and objects:
+
+![alt text](images/Capture.jpg)
+
+
+## Classes and Objects
+
+In Java, everything is associated with classes and objects, along with their attributes and methods. An example: In real life, a car is an object. The car has attributes, like weight and color, and methods, like driving and braking.
+A class is like an object constructor or a "blueprint" for creating objects
+
+
+**Create a class**
+
+```
+class Car
+{
+    String color = "red";
+}
+```
+
+
+**Create an object**
+
+An object is created from a class. We have already created the class Car and now we can use it to create objects.
+To create an object from Car, specify the class name followed by the object name and use the new keyword:
+
+```
+class Car
+{
+    String color = "red";
+    static void Main(String[] args)
+    {
+        Car myObj = new Car(); System.out.println(myObj.color);
+    }
+}
+```
