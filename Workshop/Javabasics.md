@@ -417,6 +417,6 @@ Operators are used to perform operations on variables and values. In the followi
 | `>=` |  Greater than or equal | The greater than or equal operator returns true if the right operand is less than or equal to the left operand, and false otherwise | `x >= y` |
 | `<=` |  less than or equal | The less than or equal operator returns true if the left operand is less than or equal to the right operand, and false otherwise | `x <= y` |
 | `&&` |  Logical and | Returns true if both statements are true | `x < 5 && x < 10` |
-| `&#124;&#124;` |  Logical or Returns true if one of the statements is true | `x < 5 &#124;&#124; x < 10` |
+| `&#124; &#124;` |  Logical or Returns true if one of the statements is true | `x < 5 &#124; &#124; x < 10` |
 | `!` |  Logical not | Reverses the result, returns false if the result is true | `!(x < 5 && x < 10)` |
 
