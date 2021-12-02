@@ -408,7 +408,7 @@ Operators are used to perform operations on variables and values. In the followi
 | `=` | equals | assigns a value to a variable | `x = 5` |
 | `+=` | Addition assignment | The addition assignment operator adds the value of the right operand to a variable and assigns the result to the variable. | `x += 5` |
 | `-=` | Subtraction assignment | The subtraction assignment operator subtracts the value of the right operand from a variable and assigns the result to the variable. | `x -= 5` |
-| `*`= | Multiplication assignment | The multiplication assignment operator multiplies a variable by the value of the right operand and assigns the result to the variable. | `x *= 5` |
+| `*=` | Multiplication assignment | The multiplication assignment operator multiplies a variable by the value of the right operand and assigns the result to the variable. | `x *= 5` |
 | `/=` | Division assignment | The division assignment operator divides a variable by the value of the right operand and assigns the result to the variable. | `x /= 5` |
 | `==` | Equality | checks whether its two operands are equal, returning a Boolean result. | `x == y` |
 | `!=` | Inequality | checks whether its two operands are not equal, returning a Boolean result. | `x != y` |
@@ -417,6 +417,6 @@ Operators are used to perform operations on variables and values. In the followi
 | `>=` |  Greater than or equal | The greater than or equal operator returns true if the right operand is less than or equal to the left operand, and false otherwise | `x >= y` |
 | `<=` |  less than or equal | The less than or equal operator returns true if the left operand is less than or equal to the right operand, and false otherwise | `x <= y` |
 | `&&` |  Logical and | Returns true if both statements are true | `x < 5 && x < 10` |
-| `||` |  Logical or Returns true if one of the statements is true | `x < 5 || x < 10` |
+| .`||` |  Logical or Returns true if one of the statements is true | `x < 5 || x < 10` |
 | `!` |  Logical not | Reverses the result, returns false if the result is true | `!(x < 5 && x < 10)` |
 
