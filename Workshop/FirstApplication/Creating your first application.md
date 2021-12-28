@@ -1,4 +1,4 @@
-#Hello World!
+# Hello World!
 
 Intellij Idea is an IDE (Integrated Development Enviorment) IDEs are what we use to write and compile our code.
 Intellij Idea like most modern IDEs is rich with features for example error checking, code generation etc.
