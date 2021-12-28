@@ -282,7 +282,7 @@ The default keyword is optional and specifies a code to be executed if there is 
 
 ```
 int day = 4;
- switch (day)
+switch (day)
 {
 case 6:
     System.out.println("Today is Saturday"); 
