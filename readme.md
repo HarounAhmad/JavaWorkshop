@@ -29,7 +29,7 @@ Workshop content:
 ## Installation
 
 
-or install directly using **tar**:
+install using **tar**:
 <br>
 1. download tar file from jetbrains downloads page
 2. Extract the tarball to a directory that supports file execution <br>
