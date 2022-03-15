@@ -368,8 +368,8 @@ foreach (type variableName : arrayName)
 
 ***Example***
 ```
-String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
-foreach (String i in cars)
+String[] vehicles = {"car", "train", "bus", "plane"};
+foreach (String i in vehicles)
 {
     System.out.println(i);
 }
@@ -427,31 +427,31 @@ type[] name = {var1, var2, var3}
 ***Example***
 
 ```
-String[] cars;
-String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+String[] vehicles;
+String[] vehicles = {"car", "train", "bus", "plane"};
 ```
 
 
 You access an array element by referring to the index number. This statement accesses the value of the first element in cars:
 ```
-String[] cars = {"Volvo", "BMW", "Ford", "Mazda"}; 
-System.out.println(cars[0]);
-// Outputs Volvo
+String[] vehicles = {"car", "train", "bus", "plane"};
+System.out.println(vehicles[0]);
+// Outputs car
 ```
 
 To change the value of a particular element, specify the index number:
 
 ```
-String[] cars = {"Volvo", "BMW", "Ford", "Mazda"}; cars[0] = "Opel";
+String[] vehicles = {"car", "train", "bus", "plane"}; vehicles[0] = "boat";
 System.out.println(cars[0]);
-// Now outputs Opel instead of Volvo
+// Now outputs boat instead of car
 ```
 
 To find out how many elements an array has, use the length property:
 
 ```
-String[] cars = {"Volvo", "BMW", "Ford", "Mazda"}; 
-System.out.println(cars.Length);
+String[] vehicles = {"car", "train", "bus", "plane"};
+System.out.println(vehicles.Length);
 // Outputs 4
 ```
 
@@ -473,9 +473,9 @@ foreach (type variableName : arrayName) {
 ***Example***
 
 ```
-String[] cars = {"Volvo", "BMW", "Ford", "Mazda"}; 
-foreach (String i in cars){
-    Console.WriteLine(i);
+String[] vehicles = {"car", "train", "bus", "plane"};
+foreach (String i in vehicles){
+    System.out.println(i);
 }
 ```
 
@@ -487,9 +487,9 @@ foreach (String i in cars){
 
 ```
 // Sort a String
-String[] cars = {"Volvo", "BMW", "Ford", "Mazda"}; 
-Array.Sort(cars);
-foreach (String i in cars){ 
+String[] vehicles = {"car", "train", "bus", "plane"};
+Array.Sort(vehicles);
+foreach (String i in vehicles){ 
     System.out.println(i);
 }
 
@@ -512,9 +512,7 @@ OOP helps keep JAVA code DRY "Don't Repeat Yourself" and makes the code easier t
 OOP makes it possible to create complete reusable applications with less code and shorter development time
 Tip: The "Don't Repeat Yourself" (DRY) principle is about reducing code repetition. You should take out the codes that are common to the application and place them in a single place and reuse them instead of repeating them.
 Classes and objects are the two main aspects of object-oriented programming.
-Take a look at the following figure to see the difference between classes and objects:
 
-![alt text](images/Capture.jpg)
 
 
 ## Classes and Objects
