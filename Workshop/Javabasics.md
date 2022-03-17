@@ -546,3 +546,24 @@ class Car
     }
 }
 ```
+
+Objects can also take parameters, so when you create a new object you can pass your own values instead of hardcoded values
+<br> 
+this can be accomplished by using what is called a `constructor`.
+<br> 
+for example a Person class could look like this
+```
+public class Person {
+    private String firstName;
+    private String lastName;
+    
+    public Person(String firstName,String lastName){ //Class Constructor with first and lastname params
+        this.firstName = firstName; // assigning the class the values given to the constructor to the class variables, "this."  points to the class variables
+        this.lastName = lastName;
+    }
+
+}
+```
+
+
+
